@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+</head>
+<body>
+    <button value="country" onclick="country()">Country</button>
+
+    <div id="country" style="display: none; margin-top: 20px;">
+        
+        <button id="india" onclick="india()">India</button>
+        <p id="india-show"style="display: none;">The Indian currency is known as the Indian Rupee (INR). It has seven land bordering countries that are Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh, and Myanmar. It shares maritime border with Sri Lanka, Thailand, Maldives and Indonesia. With these interesting facts about India, let us learn about its history, geography, culture, flag, famous people, agriculture, notable inventions, and much more. </p>
+        <button id="america" onclick="america()">America</button>
+        <p id="america-show"style="display: none;">The United States of America is the world's third largest country in size and nearly the third largest in terms of population. Located in North America, the country is bordered on the west by the Pacific Ocean and to the east by the Atlantic Ocean. Along the northern border is Canada and the southern border is Mexico. There are 50 states and the District of Columbia.</p>
+        <button id="china" onclick="china()">China</button>
+        <p id="china-show"style="display: none;">China, the largest of all Asian countries, occupies nearly the entire East Asian landmass and covers approximately one-fourteenth of the land area of Earth, making it almost as large as the whole of Europe. </p>
+    </div>
+    <script>
+      function  country(){
+             var country = document.getElementById("country");
+            if(country.style.display == "block") { 
+                country.style.display = "none";
+            }
+            else { 
+                country.style.display = "block";
+            }
+        }
+
+        function india(){
+            var indiaShow = document.getElementById("india-show");
+            if(indiaShow.style.display == "block") { 
+                indiaShow.style.display = "none";
+            }
+            else { 
+                indiaShow.style.display = "block";
+            }
+        }
+
+        function america(){
+            var americaShow = document.getElementById("america-show");
+            if(americaShow.style.display == "block") { 
+                americaShow.style.display = "none";
+            }
+            else { 
+                americaShow.style.display = "block";
+            }
+        }
+        function china(){
+            var chinaShow = document.getElementById("china-show");
+            if(chinaShow.style.display == "block") { 
+                chinaShow.style.display = "none";
+            }
+            else { 
+                chinaShow.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
